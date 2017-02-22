@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ls
+ls -al
 
 #if ["andwater" == "$1"]; then
 #    ls
