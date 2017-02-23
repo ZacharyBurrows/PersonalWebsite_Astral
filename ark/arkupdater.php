@@ -14,7 +14,7 @@ function runscript($pw) {
 }
 
 if (isset($_POST['password'])) {
-    $result = runscript(intval($_POST['password']));
+    $result = runscript(strval($_POST['password']));
     #$result = addNumbers(intval($_POST['number1']), intval($_POST['number2']));
 }
 ?>
@@ -27,7 +27,7 @@ if (isset($_POST['password'])) {
 
 
     <?php if (isset($result)) { ?>
-        <textarea rows="75" cols="30"> <?php echo $result ?></textarea>
+        <textarea rows="30" cols="75"> <?php echo $result ?></textarea>
     <?php } ?>
 </body>
 </html>
