@@ -6,8 +6,9 @@ function addNumbers($firstNumber, $secondNumber) {
 
 function runscript($pw) {
     $cpw="andwater";
-    if($pw==$cpw)
-        return "OUTPUT:\n" + shell_exec('ssh_command.sh ');
+    echo $pw;
+    if($pw===$cpw)
+        return "OUTPUT:\n" . shell_exec('ssh_command.sh ');
     else
         return "Invalid password";
 }
@@ -26,7 +27,7 @@ if (isset($_POST['password'])) {
 
 
     <?php if (isset($result)) { ?>
-        <textarea rows="50" cols="50"> <?php echo $result ?></textarea>
+        <textarea rows="75" cols="30"> <?php echo $result ?></textarea>
     <?php } ?>
 </body>
 </html>
