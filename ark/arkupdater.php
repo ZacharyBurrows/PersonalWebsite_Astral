@@ -1,23 +1,17 @@
 <?php
+    function runscript($pw) {
+        $cpw="andwater";
+        if($pw===$cpw)
+            return "OUTPUT:\n" . shell_exec('ssh_command.sh 2>&1');
+        else
+            return "Invalid password";
+    }
 
-function addNumbers($firstNumber, $secondNumber) {
-    return $firstNumber + $secondNumber;
-}
-
-function runscript($pw) {
-    $cpw="andwater";
-    echo $pw;
-    if($pw===$cpw)
-        return "OUTPUT:\n" . shell_exec('ssh_command.sh ');
-    else
-        return "Invalid password";
-}
-
-if (isset($_POST['password'])) {
-    $result = runscript(strval($_POST['password']));
-    #$result = addNumbers(intval($_POST['number1']), intval($_POST['number2']));
-}
+    if (isset($_POST['password'])) {
+        $result = runscript(strval($_POST['password']));
+    }
 ?>
+
 <html>
 <body>
 
