@@ -19,7 +19,7 @@
 
     <form action="" method="post">
     <p>password: <input type="text" name="password" /></p>
-    <p><input type="submit"/></p>
+    <p><input type="submit" value="Update ARK" /></p>
 
 
     <?php if (isset($result)) { ?>
