@@ -1,10 +1,3 @@
 #!/bin/bash
 
-ls -al
-
-#if ["andwater" == "$1"]; then
-#    ls
-#    #sshpass -p $1 ssh ark@73.181.247.193 << 'ENDSSH'
-#else
-#    echo "INCORRECT PASSWORD"
-#fi
+sshpass -p "dickbutt" ssh -t -t ark:dickbutt@73.181.247.193 /home/ark/epicsrvrmgr/ark/stopUpdateStart.sh
