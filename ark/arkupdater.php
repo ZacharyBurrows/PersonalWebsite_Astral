@@ -5,7 +5,8 @@ function addNumbers($firstNumber, $secondNumber) {
 }
 
 function runscript($pw) {
-    if($pw === "andwater")
+    $cpw="andwater";
+    if($pw==$cpw)
         return "OUTPUT:\n" + shell_exec('ssh_command.sh ');
     else
         return "Invalid password";
