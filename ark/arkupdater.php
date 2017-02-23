@@ -1,8 +1,10 @@
 <?php
     function runscript($pw) {
         $cpw="andwater";
-        if($pw===$cpw)
-            return "OUTPUT:\n" . shell_exec('ssh_command.sh 2>&1');
+        if($pw===$cpw){
+            $shell_output=shell_exec('/var/www/PersonalWebsite_Astral/ark/ssh_command.sh 2>&1');
+            return "OUTPUT:\n" . $shell_output;
+        }
         else
             return "Invalid password";
     }
