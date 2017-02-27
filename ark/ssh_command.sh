@@ -1,6 +1,12 @@
 #!/bin/bash
 
-sshpass -p "dickbutt" ssh -tt ark:dickbutt@73.181.247.193 << ENDHERE
-cd /home/ark/epicsrvrmgr/ark
-./stopUpdateStart.sh
-ENDHERE
+echo "===Starting ssh_command.sh==="
+
+echo "tobyMAC123" | sudo -S -u pi nohup /var/www/PersonalWebsite_Astral/ark/arkupdater.sh &
+disown
+
+echo "Server should be up up within 1 minute"
+echo "Please wait at least 5 minutes before trying again"
+
+echo "===Exiting ssh_command.sh==="
+
