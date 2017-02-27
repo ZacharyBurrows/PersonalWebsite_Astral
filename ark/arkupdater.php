@@ -20,11 +20,11 @@
 	background-image: url("http://i.imgur.com/nKtB4E2.png");
 </style>
 
-<body>
+<body style="background-image: url("http://i.imgur.com/nKtB4E2.png");">
 
     <form action="" method="post">
     <p>password: <input type="text" name="password" /></p>
-    <p><input type="submit" value="Update ARK" /></p>
+    <p style="color:blue;"><input type="submit" value="Update ARK" /></p>
 
 
     <?php if (isset($result)) { ?>
