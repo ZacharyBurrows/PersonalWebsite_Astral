@@ -16,6 +16,10 @@
 ?>
 
 <html>
+<style>
+	background-image: url("http://i.imgur.com/nKtB4E2.png");
+</style>
+
 <body>
 
     <form action="" method="post">
