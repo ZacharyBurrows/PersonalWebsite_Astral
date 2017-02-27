@@ -16,11 +16,22 @@
 ?>
 
 <html>
-<style>
-	background-image: url("http://i.imgur.com/nKtB4E2.png");
-</style>
+	<head>
+	<style>
+		body {
+			background-image: url("http://i.imgur.com/nKtB4E2.png");
+		}
+	</style>
+	</head>
 
-<body style="background-image: url("http://i.imgur.com/nKtB4E2.png");">
+<body >
+
+	<h1>ARK UPDATE SITE</h1>
+	<p>Stops, updates, and starts server</br>
+	Please be patient. Update can take a few minutes.</br>
+	--- </br>
+	Good luck out there...</br>
+	---</p>
 
     <form action="" method="post">
     <p>password: <input type="text" name="password" /></p>
