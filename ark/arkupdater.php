@@ -2,7 +2,6 @@
     function runscript($pw) {
         $cpw="andwater";
         if($pw===$cpw){
-	    echo "running your script";
             $message=shell_exec("/var/www/PersonalWebsite_Astral/ark/ssh_command.sh 2>&1");
 	    return $message;
         }
@@ -17,25 +16,40 @@
 
 <html>
 	<head>
-	<style>
+	<style type="text/css">
 		body {
-			background-image: url("http://i.imgur.com/nKtB4E2.png");
+                background-size: auto, 100% 100%;
+        	}
+
+		p {
+		text-align: center;
+		}
+
+		h1 {
+                text-align: center;
+                }
+
+		textarea {
+    		display: block;
+   	 	margin-left: auto;
+    		margin-right: auto;
 		}
 	</style>
 	</head>
 
-<body >
+<body type="text/css" background="bg.jpg" font-family: "serif" text-align: "center">
 
 	<h1>ARK UPDATE SITE</h1>
-	<p>Stops, updates, and starts server</br>
+	<p><strong>Stops, updates, and starts the server.</br>
 	Please be patient. Update can take a few minutes.</br>
-	--- </br>
-	Good luck out there...</br>
-	---</p>
+	</p>
+	<p>------------------------- </br>
+	Good luck out there</br>
+	-------------------------</strong></p>
 
     <form action="" method="post">
-    <p>password: <input type="text" name="password" /></p>
-    <p style="color:blue;"><input type="submit" value="Update ARK" /></p>
+    <p><input type="text" name="password" /></p>
+    <p style="color:blue;"><input type="submit" value="Awww yea..." /></p>
 
 
     <?php if (isset($result)) { ?>
