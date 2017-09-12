@@ -39,7 +39,7 @@
 
 <body type="text/css" background="bg.jpg" font-family: "serif" text-align: "center">
 
-	<h1>ARK UPDATE SITE</h1>
+	<h1>ARK UPDATER</h1>
 	<p><strong>Stops, updates, and starts the server.</br>
 	Please be patient. Update can take a few minutes.</br>
 	</p>
