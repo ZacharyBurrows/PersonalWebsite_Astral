@@ -2,7 +2,7 @@
 
 echo "===Starting arkupdater.sh==="
 
-sudo -u pi sshpass -p "dickbutt" ssh -tt ark:dickbutt@73.181.247.193 << ENDHERE
+sudo -u pi sshpass -p "dickbutt" ssh -tt ark:dickbutt@71.231.156.45 << ENDHERE
 cd /home/ark/epicsrvrmgr/ark
 ./stopUpdateStart.sh
 
